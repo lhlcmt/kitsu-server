@@ -4,8 +4,7 @@
   "info": {
     "singularName": "manga",
     "pluralName": "mangas",
-    "displayName": "manga",
-    "description": ""
+    "displayName": "manga"
   },
   "options": {
     "draftAndPublish": true
@@ -13,9 +12,7 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
+      "type": "string"
     },
     "description": {
       "type": "text"

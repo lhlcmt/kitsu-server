@@ -33,6 +33,12 @@
     },
     "aired": {
       "type": "date"
+    },
+    "status": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
     }
   }
 }

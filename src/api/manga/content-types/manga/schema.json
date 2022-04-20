@@ -37,6 +37,9 @@
     },
     "type": {
       "type": "string"
+    },
+    "tags": {
+      "type": "text"
     }
   }
 }

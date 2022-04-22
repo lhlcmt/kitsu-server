@@ -42,6 +42,12 @@
     },
     "tags": {
       "type": "text"
+    },
+    "anime_user_comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::anime-user-comment.anime-user-comment",
+      "mappedBy": "anime"
     }
   }
 }

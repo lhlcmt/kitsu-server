@@ -4,7 +4,8 @@
   "info": {
     "singularName": "anime-user-comment",
     "pluralName": "anime-user-comments",
-    "displayName": "anime_user_comment"
+    "displayName": "anime_user_comment",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,12 @@
     },
     "text": {
       "type": "text"
+    },
+    "anime": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::anime.anime",
+      "inversedBy": "anime_user_comments"
     }
   }
 }

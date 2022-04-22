@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "anime_user_comments",
+  "info": {
+    "singularName": "anime-user-comment",
+    "pluralName": "anime-user-comments",
+    "displayName": "anime_user_comment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "integer"
+    },
+    "anime_id": {
+      "type": "integer"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

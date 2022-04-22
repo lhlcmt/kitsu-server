@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "manga_user_comments",
+  "info": {
+    "singularName": "manga-user-comment",
+    "pluralName": "manga-user-comments",
+    "displayName": "manga_user_comment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "integer"
+    },
+    "manga_id": {
+      "type": "integer"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

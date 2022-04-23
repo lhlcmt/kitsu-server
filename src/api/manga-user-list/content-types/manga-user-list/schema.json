@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "manga_user_comments",
+  "collectionName": "manga_user_lists",
   "info": {
-    "singularName": "manga-user-comment",
-    "pluralName": "manga-user-comments",
-    "displayName": "manga_user_comment",
+    "singularName": "manga-user-list",
+    "pluralName": "manga-user-lists",
+    "displayName": "manga-user-list",
     "description": ""
   },
   "options": {
@@ -18,14 +18,11 @@
     "manga_id": {
       "type": "integer"
     },
-    "text": {
-      "type": "text"
-    },
     "manga": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::manga.manga",
-      "inversedBy": "manga_user_comments"
+      "inversedBy": "manga_user_list"
     }
   }
 }

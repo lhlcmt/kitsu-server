@@ -48,6 +48,12 @@
       "relation": "oneToMany",
       "target": "api::anime-user-comment.anime-user-comment",
       "mappedBy": "anime"
+    },
+    "anime_user_list": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::anime-user-list.anime-user-list",
+      "inversedBy": "anime"
     }
   }
 }

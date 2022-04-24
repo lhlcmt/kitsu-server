@@ -49,11 +49,11 @@
       "target": "api::anime-user-comment.anime-user-comment",
       "mappedBy": "anime"
     },
-    "anime_user_list": {
+    "anime_user_lists": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::anime-user-list.anime-user-list",
-      "inversedBy": "anime"
+      "mappedBy": "anime"
     }
   }
 }

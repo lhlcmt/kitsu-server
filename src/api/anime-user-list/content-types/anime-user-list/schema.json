@@ -19,9 +19,9 @@
     },
     "anime": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::anime.anime",
-      "inversedBy": "anime_user_list"
+      "inversedBy": "anime_user_lists"
     }
   }
 }

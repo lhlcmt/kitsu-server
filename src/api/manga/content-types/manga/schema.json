@@ -41,16 +41,16 @@
     "tags": {
       "type": "text"
     },
-    "manga_user_list": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::manga-user-list.manga-user-list",
-      "inversedBy": "manga"
-    },
     "manga_user_comments": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::manga-user-comment.manga-user-comment",
+      "mappedBy": "manga"
+    },
+    "manga_user_lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::manga-user-list.manga-user-list",
       "mappedBy": "manga"
     }
   }

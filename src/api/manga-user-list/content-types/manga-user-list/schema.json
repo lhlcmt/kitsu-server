@@ -23,6 +23,17 @@
       "relation": "manyToOne",
       "target": "api::manga.manga",
       "inversedBy": "manga_user_lists"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "watching",
+        "wanttowatch",
+        "complete",
+        "onhold",
+        "dropped"
+      ],
+      "default": "watching"
     }
   }
 }

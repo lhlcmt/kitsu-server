@@ -4,7 +4,8 @@
   "info": {
     "singularName": "anime-user-list",
     "pluralName": "anime-user-lists",
-    "displayName": "anime-user-list"
+    "displayName": "anime-user-list",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,17 @@
       "relation": "manyToOne",
       "target": "api::anime.anime",
       "inversedBy": "anime_user_lists"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "watching",
+        "wanttowatch",
+        "complete",
+        "onhold",
+        "dropped"
+      ],
+      "default": "watching"
     }
   }
 }
